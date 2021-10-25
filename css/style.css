@@ -70,9 +70,10 @@
 .content.reverse {
     
     flex-direction: row-reverse;
-
 }
-.content__image {
+
+.reverse .content__image img { 
+    width: 550px;
    
 }
 .content__image img {
@@ -90,6 +91,7 @@
 .reverse .content__description .content__description--top, .reverse .content__description .content__description--bottom {
     margin-left: 0px;
 }
+
 
 .content__description--top p:first-child {
    
