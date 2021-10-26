@@ -105,7 +105,7 @@
 }
 .content__description--top p:nth-child(2) {
     margin-top: 38px;
-    
+    width: 550px;
     height: 74px;
     font-size: 18px;
     line-height: 28px;
@@ -154,9 +154,9 @@
     font-family: "Nunito Sans";
 
 }
-.text--bottom p:nth-child(2){
+.text--bottom p:nth-child(3){
     margin-top: 17px;
-    width: 340px;
+    width: 300px;
     height: 34px;
     font-size: 14px;
     line-height: 20px;
@@ -164,12 +164,12 @@
     font-weight: 400;
     font-family: "Nunito Sans";
 }
-.text--bottom p:nth-child(3){
+.text--bottom p:last-child{
     margin-top: 10px;
     font-size: 14px;
     color: #858994;
     font-weight: 700;
-        font-family: "Nunito Sans";
+    font-family: "Nunito Sans";
 }
 
 /* foter */
@@ -199,6 +199,7 @@
     background-color: #1B2740;
     height: 100px;
     width: 100%;
+    margin-top: -12px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -224,6 +225,7 @@
     height: 373px;
     width: 100%;
     width: 1170px;
+    margin-top: -6px;
     display: flex;
     justify-content: space-between;
 }
@@ -256,6 +258,7 @@
 }
 .android-ios {
     display: flex;
+    margin-top: -6px;
     
 }
 .android {
@@ -306,6 +309,9 @@
 
 
 }
+.right p:last-child{
+    margin-left: 28px;
+}
 .left p:last-child, .right p:last-child {
     width: 170px;
     height: 72px;
@@ -343,6 +349,12 @@
 .text-mobile{
     display: none;
 }
+.text-mobile-t, .text-mobile-bt {
+    display: none;
+}
+.title-mobile-bt {
+    display: none;
+}
 
 
 /* reponvisible */
@@ -366,6 +378,9 @@
     
    
 }
+.content__description--top p:nth-child(2) {
+    width: auto;
+}
 .content__description {
     width: 435px;
     
@@ -374,8 +389,8 @@
     margin-top: 40px;
 }
 .content__description--top p:first-child {
-   width: 435px;
-font-size: 35px;
+    width: 435px;
+    font-size: 35px;
     
 }
 
@@ -384,10 +399,10 @@ font-size: 35px;
 }
 .text--bottom p:first-child {
     font-size: 16px;
-    width: 250px;
+    width: 270px;
 }
 .text--bottom p:nth-child(2) {
-    width: 250px;
+    width: 270px;
 }
 .info {
     margin-top: 50px;
@@ -496,6 +511,13 @@ font-size: 35px;
 .content.reverse {
     flex-direction: column;
 }
+.reverse .content__image {
+    margin-top: -34px
+;
+}
+.mt-34 {
+ margin-top: -26px;
+}
 
 .content__image img {
     margin-top: 32px;
@@ -516,25 +538,32 @@ font-size: 35px;
     font-size: 28px;
     color: #858994;
     font-weight: 900;
+    font-family: "Nunito Sans";
     margin-top: 12px;
 }
-
-.content__description--top p:nth-child(2) {
-    width: 332px;
+.text-mobile-t {
+    display: block;
+    width: 336px;
     height: 64px;
     font-size: 16px;
     line-height: 24px;
     color: #858994;
     font-weight: 400;
-    margin-top: 24px;
+    font-family: "Nunito Sans";
+    margin-top: 22px;
+}
+.content__description--top p:nth-child(2) {
+    display: none;
+    
 }
 .user {
-    margin-top: 10px;
+   
     width: 30px;
     height: 30px;
     border-radius: 15px;
 }
 .info {
+    margin-top: 26px;
     font-size: 14px;
     color: #858994;
     font-weight: 700;
@@ -553,23 +582,45 @@ font-size: 35px;
     margin-left: 15px;
 }
 .text--bottom p:first-child {
-    width: 209px;
+    display: none;
+    /* width: 209px;
     height: 45px;
     font-size: 15px;
     color: #858994;
-    font-weight: 900;
+    font-weight: 900; */
 }
-.text--bottom p:nth-child(2) {
-
+.title-mobile-bt{
+    display: block;
+    width: 213px;
+    height: 45px;
+    line-height: 1.2;
+    font-size: 20px;
+    color: #858994;
+    font-weight: 900;
+    font-family: "Nunito Sans";
+}
+.loading{
+    margin-top: 8px;
+}
+.text-mobile-bt {
+    display: block;
     width: 209px;
     height: 34px;
     font-size: 14px;
     line-height: 20px;
     color: #858994;
     font-weight: 400;
+    margin-top: 16px;
+    margin-bottom: 10px;
+    font-family: "Nunito Sans";
 }
 .text--bottom p:nth-child(3) {
+    display: none;
+    
+}
+.text--bottom p:last-child{
     font-size: 14px;
+    margin-top: 16px;
     color: #858994;
     font-weight: 700;
 }
@@ -587,11 +638,22 @@ font-size: 35px;
     flex-direction: column;
     align-items: center;
 }
+.end-foter__dowload a {
+    margin-top: -36px;
+}
 .android-ios {
     flex-direction: column;
+    margin-top: -8px;
     
 }
 .android { margin-left: 0;
+    margin-top: 18px;
+}
+.apple-ios-text p:last-child, .android-text p:last-child {
+    font-size: 15px;
+color: #fefefe;
+font-weight: 800;
+font-family: "Nunito Sans";
 }
 .text-a {
     display: none;
@@ -602,8 +664,15 @@ font-size: 35px;
 
 
 }
+.end-foter__about {
+    margin-top: -64px;
+}
 .end-foter__about--bottom {
     justify-content: center;
+    margin-top: 56px;
+}
+.right p:nth-child(2),.left p:nth-child(2){
+    line-height: 2.1;
 }
 .text-mobile {
     display: block;
@@ -658,6 +727,7 @@ font-size: 35px;
         .header-item__list {
             display: none;
         }
+       
         .header {
             display: flex;
             justify-content: space-around;
@@ -709,8 +779,8 @@ font-size: 35px;
             font-weight: 900;
             margin-top: 12px;
         }
-        
-        .content__description--top p:nth-child(2) {
+        .text-mobile-t {
+            display: block;
             width: auto;
             height: 64px;
             font-size: 16px;
@@ -718,6 +788,11 @@ font-size: 35px;
             color: #858994;
             font-weight: 400;
             margin-top: 24px;
+            font-family: "Nunito Sans"
+        }
+        .content__description--top p:nth-child(2) {
+            display: none;
+            
         }
         .user {
             margin-top: 10px;
@@ -744,14 +819,19 @@ font-size: 35px;
         .text--bottom {
             margin-left: 15px;
         }
-        .text--bottom p:first-child {
+        .title-mobile-bt {
+            display: block;
             width: auto;
             height: 45px;
             font-size: 12px;
             color: #858994;
             font-weight: 900;
         }
-        .text--bottom p:nth-child(2) {
+        .text--bottom p:first-child {
+            display: none;
+           
+        }
+        /* .text--bottom p:nth-child(2) {
             margin-top: 5px;
             width: auto;
             height: 34px;
@@ -759,11 +839,17 @@ font-size: 35px;
             line-height: 20px;
             color: #858994;
             font-weight: 400;
-        }
-        .text--bottom p:nth-child(3) {
+        } */
+        .text-mobile-bt {
+            display: block;
             font-size: 10px;
             color: #858994;
-            font-weight: 700;
+            font-weight: 400;
+            font-family: "Nunito Sans"
+        }
+        .text--bottom p:nth-child(3) {
+            display: none;
+           
         }
         
         /*  foter  */
@@ -855,3 +941,7 @@ font-size: 35px;
         }
         
         }
+
+
+
+        
