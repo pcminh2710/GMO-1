@@ -309,9 +309,7 @@
 
 
 }
-.right p:last-child{
-    margin-left: 28px;
-}
+
 .left p:last-child, .right p:last-child {
     width: 170px;
     height: 72px;
@@ -362,6 +360,11 @@
 /* pc   @media (min-width: 1024px)
  mobile @media (min-width: 740px) and (max-width: 1023px)
  @media (max-width: 740px)*/
+ /* PC */
+ @media (min-width: 1301px) {
+   
+    
+ }
 @media (min-width: 1024px) and (max-width: 1300px){  
     .header {
         width: 100%;
@@ -671,6 +674,7 @@ font-family: "Nunito Sans";
     justify-content: center;
     margin-top: 56px;
 }
+
 .right p:nth-child(2),.left p:nth-child(2){
     line-height: 2.1;
 }
